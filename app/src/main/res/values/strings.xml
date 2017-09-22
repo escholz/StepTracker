@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">StepTracker</string>
+    <string name="aggregate_day">Day</string>
+    <string name="aggregate_week">Week</string>
+    <string name="aggregate_month">Month</string>
+    <string name="aggregate_year">Year</string>
+    <string name="aggregate_all">All Time</string>
+    <plurals name="miles">
+        <item quantity="one">%1$.1f mile</item>
+        <item quantity="other">%1$.1f miles</item>
+    </plurals>
 </resources>

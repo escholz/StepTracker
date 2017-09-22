@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_location_default"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="@dimen/holder_aggregate_margin"
+        android:layout_marginTop="@dimen/holder_aggregate_margin"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="9/21/2017 4:50:34 PM"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="@dimen/holder_aggregate_margin"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/holder_aggregate_margin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/latitude"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="@dimen/holder_aggregate_margin"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view"
+        app:layout_constraintRight_toLeftOf="@+id/longitude"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="@dimen/holder_aggregate_margin" />
+
+</android.support.constraint.ConstraintLayout>

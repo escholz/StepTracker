@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="aggregate_day_view_id" type="id"/>
+    <item name="aggregate_week_view_id" type="id"/>
+    <item name="aggregate_month_view_id" type="id"/>
+    <item name="aggregate_year_view_id" type="id"/>
+    <item name="aggregate_all_view_id" type="id"/>
+    <item name="tag_item" type="id"/>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_session_default"
+        tools:layout_constraintTop_creator="1"
+        android:layout_margin="@dimen/holder_aggregate_margin"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/session_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="a3b3df93f3ca7b"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="@dimen/holder_aggregate_margin"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/holder_aggregate_margin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2.3 miles"
+        app:layout_constraintRight_toRightOf="@+id/session_id"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="@dimen/holder_aggregate_margin"
+        app:layout_constraintTop_toTopOf="@+id/session_id" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="9/21/2017 8:51:07 AM"
+        app:layout_constraintRight_toRightOf="@+id/distance"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/distance" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="9/21/2017 10:05:34 AM"
+        app:layout_constraintRight_toRightOf="@+id/start_time"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="@dimen/holder_aggregate_margin"
+        app:layout_constraintTop_toTopOf="@+id/start_time" />
+
+</android.support.constraint.ConstraintLayout>
