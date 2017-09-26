@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="aggregate_day_duration">0</integer>
+    <integer name="aggregate_week_duration">0</integer>
+    <integer name="aggregate_month_duration">0</integer>
+    <integer name="aggregate_year_duration">0</integer>
+    <integer name="aggregate_all_duration">0</integer>
+</resources>
