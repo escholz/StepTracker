@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "208094612017",
+    "firebase_url": "https://steptracker-702c6.firebaseio.com",
+    "project_id": "steptracker-702c6",
+    "storage_bucket": "steptracker-702c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208094612017:android:dfa8c2307975a940",
+        "android_client_info": {
+          "package_name": "escholz.steptracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208094612017-vooffgdcl4m62se0qdruc8l5461g7ehk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "escholz.steptracker",
+            "certificate_hash": "3c001036c474ca7e645a0613a4f175a27a67cdc4"
+          }
+        },
+        {
+          "client_id": "208094612017-8ruql5p3ctp9ccb94f1k3e7niefn6fvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8owlcHuuL3iMzyo4Vwsn04SiSr3X7D8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208094612017-8ruql5p3ctp9ccb94f1k3e7niefn6fvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
