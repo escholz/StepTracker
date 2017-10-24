@@ -168,6 +168,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if (TextUtils.isEmpty(emailAddress))
                     return;
 
+                if (TextUtils.isEmpty(emailAddress))
+                    return;
+
                 firebaseAuth.signInWithEmailAndPassword(emailAddress, password)
                     .addOnCompleteListener(this, firebaseAuthCallback);
                 break;

@@ -1,5 +1,6 @@
 package escholz.steptracker.models;
 
+import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.annotation.DrawableRes;
@@ -17,23 +18,27 @@ public class StepAggregate implements Parcelable {
     @StringRes
     public final int labelResourceId;
     @IntegerRes
-    public final int durationInMsResourceId;
+    public final int durationInSecResourceId;
     @DrawableRes
     public final int iconResourceId;
 
     public StepAggregate(@IdRes int viewResourceId, @StringRes int labelResourceId,
-                         @DrawableRes int iconResourceId, @IntegerRes int durationInMsResourceId) {
+                         @DrawableRes int iconResourceId, @IntegerRes int durationInSecResourceId) {
         this.viewResourceId = viewResourceId;
         this.labelResourceId = labelResourceId;
-        this.durationInMsResourceId = durationInMsResourceId;
+        this.durationInSecResourceId = durationInSecResourceId;
         this.iconResourceId = iconResourceId;
     }
 
     private StepAggregate(Parcel parcel) {
         viewResourceId = parcel.readInt();
         labelResourceId = parcel.readInt();
-        durationInMsResourceId = parcel.readInt();
+        durationInSecResourceId = parcel.readInt();
         iconResourceId = parcel.readInt();
+    }
+
+    public long getEndTime(final Context context, final long nowInSec) {
+        return nowInSec - context.getResources().getInteger(durationInSecResourceId);
     }
 
     @Override
@@ -45,7 +50,7 @@ public class StepAggregate implements Parcelable {
     public void writeToParcel(Parcel parcel, int flags) {
         parcel.writeInt(viewResourceId);
         parcel.writeInt(labelResourceId);
-        parcel.writeInt(durationInMsResourceId);
+        parcel.writeInt(durationInSecResourceId);
         parcel.writeInt(iconResourceId);
     }
 
